@@ -7,34 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="main-container">
-        <header>
-            <h1 id="city-name">القاهرة</h1>
-            <h3 id="date-text">الإثنين، 20 أبريل</h3>
-            
-            <div class="select-wrapper">
-                <label for="city-select">اختر المدينة:</label>
-                <select id="city-select">
+    <header>
+        <div class="welcomeMessage">مرحبا</div>
+    </header>
+    <div class="selectionsContainer">
+        <div class="nationalitySelector">
+                <label for="nationalitySelector">اختر الدولة :</label>
+                <select id="nationalitySelector">
+                    <option value="Cairo">مصر</option>
+                    <option value="Alexandria">السعودية</option>
+                    <option value="Aswan">الامارات</option>
+                    <option value="Mansoura">الكويت</option>
+                </select>
+            </div>
+        <div class="citySelector">
+                <label for="citySelector">اختر المدينة:</label>
+                <select id="citySelector">
                     <option value="Cairo">القاهرة</option>
                     <option value="Alexandria">الإسكندرية</option>
                     <option value="Aswan">أسوان</option>
                     <option value="Mansoura">المنصورة</option>
                 </select>
             </div>
-        </header>
-
-        <hr>
-
-        <div class="cards-container" id="cards-container">
-            <div class="card">
-                <div class="card-header">الفجر</div>
-                <div class="card-time" id="fajr-time">--:--</div>
-            </div>
-            
-            </div>
     </div>
-
+    <section>
+        <div class="prayerContainer">
+            <div class="fajrContainer">
+                <div class="name">الفجر</div>
+                <div class="time">00:00</div>
+            </div>
+            <div class="shroukContainer">
+                <div class="name">الشروق</div>
+                <div class="time">00:00</div>
+            </div>
+            <div class="zohrContainer">
+                <div class="name">الظهر</div>
+                <div class="time">00:00</div>
+            </div>
+            <div class="asrContainer">
+                <div class="name">العصر</div>
+                <div class="time">00:00</div>
+            </div>
+            <div class="magrebContainer">
+                <div class="name">المغرب</div>
+                <div class="time">00:00</div>
+            </div>
+            <div class="eshaaContainer">
+                <div class="name">العشاء</div>
+                <div class="time">00:00</div>
+            </div>
+        </div>
+    </section>
+</body>
     <script src="main.js"></script>
 </body>
 </html>
