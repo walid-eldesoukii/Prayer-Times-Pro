@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة | Prayer Times</title>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1 id="city-name">القاهرة</h1>
+            <h3 id="date-text">الإثنين، 20 أبريل</h3>
+            
+            <div class="select-wrapper">
+                <label for="city-select">اختر المدينة:</label>
+                <select id="city-select">
+                    <option value="Cairo">القاهرة</option>
+                    <option value="Alexandria">الإسكندرية</option>
+                    <option value="Aswan">أسوان</option>
+                    <option value="Mansoura">المنصورة</option>
+                </select>
+            </div>
+        </header>
+
+        <hr>
+
+        <div class="cards-container" id="cards-container">
+            <div class="card">
+                <div class="card-header">الفجر</div>
+                <div class="card-time" id="fajr-time">--:--</div>
+            </div>
+            
+            </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
