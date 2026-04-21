@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000; /* خلفية سوداء صريحة */
+    background-color: #000;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -14,10 +14,9 @@ body {
     align-items: center;
 }
 
-/* الهيدر اللي فيه الترحيب */
 header {
     width: 100%;
-    height: 80px; /* زودنا الطول شوية عشان يبقى مريح */
+    height: 80px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
@@ -31,15 +30,13 @@ header {
     letter-spacing: 1px;
     color: #efefef;
 }
-
-/* حاوية اختيار الدولة والمدينة */
 .selectionsContainer {
     width: 100%;
     padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px; /* مسافة محترمة بين الدولة والمدينة */
+    gap: 50px;
     background: linear-gradient(to bottom, #0a0a0a, #000);
 }
 
@@ -69,7 +66,6 @@ select:hover {
     border-color: #666;
 }
 
-/* منطقة عرض المواعيد */
 section {
     width: 100%;
     flex-grow: 1;
@@ -81,7 +77,6 @@ section {
 
 .prayerContainer {
     display: grid;
-    /* بيخلي الكروت تترص 3 في السطر أو تنزل تحت بعض حسب الشاشة */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     width: 100%;
